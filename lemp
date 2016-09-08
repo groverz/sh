@@ -9,3 +9,9 @@ sudo mkdir /app/default
 sudo chown www-data:www-data /app
 
 sudo useradd -G www-data h0
+
+cd tmp
+wget https://github.com/ajsalkeld/nginx-modsite/releases/download/1.0/nginx-modsite-ubuntu
+mv nginx-modsite-ubuntu  nginx-modsite
+sudo mv nginx-modsite /usr/local/bin/
+sudo chmod 755 /usr/local/bin/nginx-modsite
